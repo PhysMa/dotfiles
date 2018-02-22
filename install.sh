@@ -8,4 +8,8 @@ ln -sf ~/dotfiles/flattened_light.vim ~/.vim/colors/flattened_light.vim
 ln -sf ~/dotfiles/solarized.vim ~/.vim/colors/solarized.vim
 ln -sf ~/dotfiles/.vimrc ~/.vimrc
 
+# VimPlug
+mkdir -p ~/.vim/autoload
+ln -sf ~/dotfiles/plug.vim ~/.vim/autoload/plug.vim
+
 # bash
