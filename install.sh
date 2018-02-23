@@ -13,3 +13,6 @@ mkdir -p ~/.vim/autoload
 ln -sf ~/dotfiles/plug.vim ~/.vim/autoload/plug.vim
 
 # bash
+ln -sf ~/dotfiles/.bashrc ~/.bashrc
+ln -sf ~/dotfiles/.dir_colors ~/.dircolors
+

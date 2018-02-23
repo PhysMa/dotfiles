@@ -3,6 +3,8 @@ syntax enable
 set background=dark
 colorscheme solarized 
 let g:solarized_termcolors=16
+set mouse=a
+inoremap jj <Esc>
 
 " Plugins will be downloaded under the specified directory.
 call plug#begin('~/.vim/plugged')
@@ -11,6 +13,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline' 
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
+Plug 'christoomey/vim-tmux-navigator'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -18,3 +21,5 @@ call plug#end()
 " Airline theme
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
+hi Normal ctermbg=none
+
