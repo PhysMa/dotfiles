@@ -139,6 +139,7 @@ fi
 alias ll='ls -alFt'
 alias la='ls -A'
 alias l='ls -CF'
+alias ssh='ssh -X'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
