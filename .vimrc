@@ -16,6 +16,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'scrooloose/nerdtree'
 Plug 'Valloric/YouCompleteMe'
+Plug 'majutsushi/tagbar'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -33,4 +34,10 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 
 " Python mode
 " let g:pymode_python = 'python3'
+
+" YouCompleteMe
+let g:ycm_autoclose_preview_window_after_completion=1
+
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
 
