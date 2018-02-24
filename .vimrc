@@ -14,6 +14,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'scrooloose/nerdtree'
+Plug 'Valloric/YouCompleteMe'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
@@ -22,4 +24,13 @@ call plug#end()
 let g:airline_theme='solarized'
 let g:airline_solarized_bg='dark'
 hi Normal ctermbg=none
+
+" Autorun NERDtree
+"autocmd vimenter * NERDTree
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+nnoremap <C-n> :NERDTreeToggle<CR>
+
+" Python mode
+" let g:pymode_python = 'python3'
 
