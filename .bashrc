@@ -122,3 +122,10 @@ fi
 
 # added by Anaconda3 installer
 export PATH="/home/ericma/anaconda3/bin:$PATH"
+
+# virtualenv related
+source /usr/local/bin/virtualenvwrapper.sh
+VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+WORKON_HOME=~/envs
+alias python=python3
+
